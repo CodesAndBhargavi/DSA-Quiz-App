@@ -12,6 +12,9 @@ public interface QuestionDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(List<Question> questions);
 
+    @Query("DELETE FROM questions")
+    void deleteAll();
+
     @Query("SELECT COUNT(*) FROM questions")
     int getCount();
 
