@@ -67,11 +67,6 @@
             android:name=".activities.SettingsActivity"
             android:exported="false" />
 
-        <!-- Project Report Screen -->
-        <activity
-            android:name=".activities.ReportActivity"
-            android:exported="false" />
-
         <!-- Legacy / Fallback MainActivity -->
         <activity
             android:name=".MainActivity"
