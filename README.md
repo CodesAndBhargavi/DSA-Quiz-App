@@ -47,5 +47,5 @@ An interactive, pastel-themed Data Structures & Algorithms (DSA) Quiz & Learning
 ---
 
 ## 👩‍💻 Author
-**Bhargavi Digu Naik**  
+**Bhargavi Digambar Naik**  
 *InternsElite Android App Development + Java Training Program (September 2026)*

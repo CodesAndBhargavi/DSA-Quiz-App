@@ -4,7 +4,7 @@
 **Organization:** InternsElite  
 **Track:** Minor Project (Option 4: Quiz App)  
 **Submission Date:** September 2026  
-**Developer:** Bhargavi Digu Naik  
+**Developer:** Bhargavi Digambar Naik  
 
 ---
 
