@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_main"
+    android:padding="16dp"
+    android:elevation="2dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Header: Q# & Correct/Incorrect Chip -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvReviewQNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvReviewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_chip"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="✔ Correct"
+            android:textColor="@color/correct_green_border"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/tvReviewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the average time complexity of accessing an element in an array by its index?"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- User Answer vs Correct Answer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_stat_chip"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvReviewUserAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Answer: [A] O(1)"
+            android:textColor="@color/correct_green_border"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvReviewCorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer: [A] O(1)"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+
+    <!-- Technical Explanation -->
+    <TextView
+        android:id="@+id/tvReviewExplanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Arrays provide constant time O(1) random access because elements are stored contiguously in memory."
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        android:lineSpacingExtra="2dp" />
+</LinearLayout>
