@@ -16,7 +16,7 @@ import java.util.Calendar;
 public class HomeActivity extends AppCompatActivity {
 
     private TextView tvGreeting, tvTotalStars, tvAccuracy, tvSessions, tvTipContent;
-    private LinearLayout cardStudy, cardPractice, cardQuiz, cardStats;
+    private LinearLayout cardStudy, cardPractice, cardQuiz, cardStats, cardProjectReport;
     private View btnSettings, btnLeaderboardTop;
     private PreferenceManager preferenceManager;
     private AppDatabase db;
@@ -51,6 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         cardPractice = findViewById(R.id.cardPractice);
         cardQuiz = findViewById(R.id.cardQuiz);
         cardStats = findViewById(R.id.cardStats);
+        cardProjectReport = findViewById(R.id.cardProjectReport);
 
         btnSettings = findViewById(R.id.btnSettings);
         btnLeaderboardTop = findViewById(R.id.btnLeaderboardTop);
@@ -125,6 +126,15 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, LeaderboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Project Report
+        cardProjectReport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ReportActivity.class);
                 startActivity(intent);
             }
         });
